@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  color: white;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+nav .h3 {font-size: 1.5rem;}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span { color: #ff0157; font-size: 1.5rem; }
+h1 { font-size: 1.5rem; font-weight: 400; }
+.fine {border-bottom: 1px solid #ff0157;}
+
+.nav-links p:hover {
+  opacity: .4;
+  cursor: pointer;
+}
+
+.banner,
+.people,
+.places,
+.consultants,
+.testimonials,
+.contact {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 10vh 0;
+}
+
+.banner {
+  background: url(img/backdrop.jpeg);
+  background-size: cover;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.people {
+  background: #ccc;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people .peopleDown {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 5rem;
+  max-width: 1440px;
+}
+
+.people .peopleDown .left {
+  width: 50%;
+}
+
+.people .peopleDown .imgBox {
+  width: 50%;
+  height: 30rem;
+  margin-left: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.people .peopleDown .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.banner p {font-size: 1rem;}
+
+.banner h3 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.lnk {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #ff0157;
+  padding: .3rem .7rem;
+  transition: .3s;
+}
+
+.lnk:hover {
+  letter-spacing: 3px;
+}
+
+.places {
+  background: linear-gradient(270deg, #000000, #005b71);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.places .placesTop h1 {
+  color: #fff;
+  margin: 1rem 0 0 0;
+}
+
+.places p {
+  color: #fff; 
+  margin-top: 0;
+}
+
+.places .placesImg .imgBox p {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #0e497a;
+  background: #ccc;
+  padding: .4rem 1rem;
+  font-weight: bold;
+}
+
+.places .placesImg {
+  display:  flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.places .imgBox {
+  width: 25rem;
+  height: 15rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.places .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.consultants {
+  background: #ccc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.consultants .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+
+.consultants .content .contentBx {
+  background: linear-gradient(-290deg, #ff0157, #005b71);
+  width: 20rem;
+  height: 30rem;
+  margin: .5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.consultants .content .contentBx p {
+  position: absolute;
+  color: #fff;
+  background: #005b71;
+  padding: .5rem 1rem;
+  bottom: 0;
+  left: 1rem;
+}
+
+.consultants .imgBox {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  margin: .5rem;
+  overflow: hidden;
+}
+
+.consultants .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.testimonials {
+  background: url(img/backdrop2.jpeg);
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.testimonials .testiTop {
+  color: #fff;
+}
+
+.testimonials .testiRest {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.testimonials .testiRest .whiteBox {
+  position: relative;
+  background: #fff;
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem;
+  border-radius: .6rem;
+  padding: 7rem 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.testimonials .testiRest .whiteBox .imgBox {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.testimonials .testiRest .whiteBox .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contact {
+  background: url(img/backdrop3.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+.contact .contain {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+
+.contact .first {
+  margin-top: 5rem;
+}
+
+.contact .fill {
+  height: 70vh;
+  padding-left: 5rem;
+}
+
+.contact .fill .whiteBox {
+  background: #fff;
+  width: 25rem;
+  height: 26rem;
+  box-shadow: 0 .3rem 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.contact .fill .whiteBox input,
+.contact .fill .whiteBox textarea {
+  width: 100%;
+  padding: 10px;
+  margin: .5rem 0;
+  outline: none;
+  border: 1px solid #000;
+}
+
+textarea {
+  resize: none;
+  height: 6rem;
+}
+
+.contact .fill .whiteBox button {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  background: #ff0157;
+  color: #fff;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}

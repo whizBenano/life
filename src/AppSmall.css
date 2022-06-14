@@ -1,0 +1,277 @@
+@media screen and (max-width: 991px) {
+    .banner,
+    .people,
+    .places,
+    .consultants,
+    .testimonials,
+    .contact {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 5rem 2rem;
+        overflow-x: hidden;
+        background-size: cover;
+    }
+
+    nav {  
+        padding: 0 10rem 0 5rem;
+    }
+
+    .banner h1 {
+        font-size: 4rem !important;
+    }
+
+    .people {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .people .peopleDown {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .people .peopleDown .left {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .people .peopleDown .imgBox {
+        width: 100%;
+        margin: 0;
+    }
+
+    .places {
+        justify-content: space-between;
+    }
+    
+    .places .placesImg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .places .placesImg .imgBox {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .places .placesImg .imgBox p {
+        font-size: .8rem;
+        padding: .2rem .5rem;
+        margin: 0 0 .5rem 0;
+    }
+    
+    .consultants {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .consultants .content {
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .consultants .content .contentBx {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .consultants .imgBox {
+        position: relative;
+        width: 15rem;
+        height: 20rem;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .consultants .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .testimonials {
+        padding: 2rem;
+    }
+
+    .testimonials .testiTop {
+        margin: 8rem 1rem 0;
+    }
+  
+    .testimonials .testiRest {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .testimonials .testiRest .whiteBox {
+        width: 15rem;
+        height: 17rem;
+        margin: .5rem;
+        padding: 6rem 2rem 1rem;
+    }
+
+    .testimonials .testiRest .whiteBox p, h3 {font-size: smaller;}
+
+    .testimonials .testiRest .whiteBox .imgBox {
+        top: 1rem;
+        left: 50%;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .contact {
+        padding: 0 0 5rem;
+    }
+
+    .contact .contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .fill {
+        padding: 0;
+        width: 90%;
+    }
+
+    .contact .whiteBox {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    * {box-sizing: border-box;}
+
+    nav {
+        padding: 0;
+    }
+    
+    nav .control {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .control .swap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .control .swap span {
+        position: absolute;
+        background: #fff;
+        width: 30px;
+        height: 3px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+
+    .control .swap span:nth-child(1) {
+        transform: translateY(12px);
+    }
+
+    .control .swap span:nth-child(2) {
+        transform: translateY(-12px);
+    }
+    /* flexible */
+
+    .close .swap span:nth-child(3) {
+        transform: translate(-50px);
+    }
+
+    .close .swap span:nth-child(1) {
+        transform: rotate(225deg);
+        background: red;
+        transition-delay: 1s;
+    }
+
+    .close .swap span:nth-child(2) {
+        transform: rotate(-45deg);
+        transition-delay: .5s;
+        background: red;
+    }
+
+    .nav-links {
+        clip-path: circle(0px at 90% -5%);
+        background: #005b71;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: .8s ease;
+        padding: 5rem 0 10rem;
+    }
+
+    .nav-links p {
+        border-bottom: none;
+    }
+
+    .open {
+        clip-path: circle(63rem at 100% 2%);
+    }
+
+    .banner h1 {
+        font-size: 2rem !important;
+    }
+
+    h1, h1 span {font-size: 22px;}
+    p {font-size: 14px !important;}
+
+    .places {
+        padding: 5rem 0;
+    }
+
+    .places .placesImg .imgBox {
+        width: 100%;
+        height: 15rem;
+    }      
+
+    .testimonials {
+        padding: 0;
+    }
+
+    .contact {
+        padding: 0 0 2rem;
+    }
+
+    .contact .fill {
+        display: flex;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: center;
+        width: 95%;
+    }
+    
+    .contact .fill .whiteBox {
+        margin: 0 auto;
+    }
+
+    .foot {
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        font-size: 9px;
+    }
+      
+}
